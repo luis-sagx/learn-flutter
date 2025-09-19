@@ -12,6 +12,7 @@ void main(){
   print('fin del programa');
 }
 
+// future es una promesa de que en algun momento se va a obtener un valor
 Future<String> httpGet(String url){
   return Future.delayed( const Duration(seconds: 1), () {
     throw 'error en la peticion http';

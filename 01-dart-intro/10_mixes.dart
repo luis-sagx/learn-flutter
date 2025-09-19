@@ -10,7 +10,7 @@ abstract class Bird extends Animal {
 abstract class Fish extends Animal {
 }
 
-
+// mixin es una clase que puede ser reutilizada en otras clases
 mixin CanFly {
   void fly() {
     print('Flying');

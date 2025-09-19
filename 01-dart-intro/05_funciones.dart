@@ -11,11 +11,12 @@ int addTwoNumbers(int a, int b){
   return a + b;
 }
 
-int addTwoNumbersOptional(int a, [int b = 0]){
+int addTwoNumbersOptional(int a, [int b = 0]){ //el segundo argumento es opcional
   //b ??= 0;
   return a + b;
 }
 
-String greetPerson({required String name, String message = 'como estas?'}){
+String greetPerson({required String name, String message = 'como estas?'}){ // argumentos nombrados
+  // el argumento requerido debe ser pasado obligatoriamente y en cualquier orden
   return 'Hola $name, $message';
 }

@@ -15,6 +15,7 @@ double chargePhone( EnergyPlant plant) {
   return plant.energyLeft - 10;
 }
 
+// enum es un conjunto de valores predefinidos
 enum PlantType { nuclear, wind, water }
 
 abstract class EnergyPlant {
@@ -32,6 +33,7 @@ abstract class EnergyPlant {
 
 class WindPlant extends EnergyPlant{
   
+  // llamar al constructor de la clase padre
   WindPlant({
     required double initialEnergy,
   })

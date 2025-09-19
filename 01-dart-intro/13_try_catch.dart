@@ -4,9 +4,9 @@ void main() async {
   try{
     final value = await httpGet('https://hola-mundo.com');
     print('Exito -> $value');
-  } on Exception catch (e) {
+  } on Exception catch (e) { // on para excepciones especificas
     print('Tenemos una excepcion -> $e');
-  } catch (e) {
+  } catch (e) {   // catch para cualquier otra excepcion  
     print('Algo terrible paso -> $e');
   } finally {
     print('Fin del try-catch');

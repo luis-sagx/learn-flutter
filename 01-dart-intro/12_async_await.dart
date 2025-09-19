@@ -1,7 +1,8 @@
+// el main es async porque dentro se usa await
 void main() async {
   print('inicio del programa');
-  
-  try{
+
+  try {
     final value = await httpGet('https://hola-mundo.com');
     print(value);
   } catch (e) {
@@ -12,6 +13,7 @@ void main() async {
 }
 
 Future<String> httpGet(String url) async {
+  //delayed es para simular una peticion que tarda
   await Future.delayed(const Duration(seconds: 1));
   throw 'Error en la peticion';
   // return 'tenemos el valor de la peticion';

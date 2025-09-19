@@ -4,8 +4,8 @@ void main() {
   print('Lista numero elementos: ${numbers.length}');
   print('Lista index 0: ${numbers.first}');
   print(
-    'Lista reversa: ${numbers.reversed}',
-  ); //imprime entre parentesis (iterable)
+    'Lista reversa (iterable): ${numbers.reversed}',
+  ); //imprime entre parentesis (Es un iterable)
 
   final reverseNumbers = numbers.reversed;
   print('Iterable: ${reverseNumbers}');

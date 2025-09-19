@@ -1,4 +1,5 @@
 void main() {
+  // map = diccionario
   final Map<String, dynamic> pokemon = {
     'name': 'Pika',
     'hp': 100,

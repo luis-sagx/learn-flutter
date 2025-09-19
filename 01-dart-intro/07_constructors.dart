@@ -30,7 +30,8 @@ class Hero {
     required this.isAlive
   });
   
-  
+  // constructor que crea una instancia de Hero a partir de un mapa (json)
+  // evalua si las llaves existen, si no asigna un valor por defecto
   Hero.fromJson(Map<String, dynamic> json)
     : name = json['name'] ?? 'No name found',
       power = json['power'] ?? 'No power found',
