@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// import 'package:flutter/services.dart';
 
 class CounterFunctionScreen extends StatefulWidget {
   const CounterFunctionScreen({super.key});
@@ -80,6 +81,7 @@ class CustomButton extends StatelessWidget {
       // shape: const StadiumBorder(), // para hacerlo circular
       enableFeedback: true, // para que haga sonido al presionar
       elevation: 10, // sombra
+      splashColor: Colors.indigo.shade400, // color al presionar
       onPressed: onPressed,
       child: Icon(icon),
     );
