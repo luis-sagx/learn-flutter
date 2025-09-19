@@ -43,6 +43,16 @@ class _ImageBubble extends StatelessWidget {
         width: maxWidth,
         height: 150,
         fit: BoxFit.cover,
+        loadingBuilder: (context, child, loadingProgress) {
+          if (loadingProgress == null) return child;
+          return Container(
+            width: maxWidth,
+            height: 150,
+            padding:
+                const EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
+            child: const Center(child: CircularProgressIndicator()),
+          );
+        },
       ),
     );
   }
