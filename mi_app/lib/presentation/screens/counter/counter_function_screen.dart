@@ -50,14 +50,15 @@ class _CounterFunctionScreenState extends State<CounterFunctionScreen> {
                 }),
             const SizedBox(height: 12),
             CustomButton(
-                icon: Icons.exposure_minus_1,
-                onPressed: () {
-                  clickCounter--;
-                  if (clickCounter < 0) {
-                    clickCounter = 0;
-                  }
-                  setState(() {});
-                }),
+              icon: Icons.exposure_minus_1,
+              onPressed: () {
+                clickCounter--;
+                if (clickCounter < 0) {
+                  clickCounter = 0;
+                }
+                setState(() {});
+              },
+            ),
           ],
         ));
   }
@@ -76,7 +77,9 @@ class CustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FloatingActionButton(
-      shape: const StadiumBorder(), // para hacerlo circular
+      // shape: const StadiumBorder(), // para hacerlo circular
+      enableFeedback: true, // para que haga sonido al presionar
+      elevation: 10, // sombra
       onPressed: onPressed,
       child: Icon(icon),
     );
