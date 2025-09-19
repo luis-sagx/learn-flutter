@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mi_app/presentation/screens/counter/counter_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,13 +12,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      // Scaffold proporciona una estructura básica para la aplicación, incluyendo AppBar, Body, etc.
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
-    );
+        debugShowCheckedModeBanner: false, home: CounterScreen());
   }
 }
