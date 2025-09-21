@@ -5,6 +5,7 @@ class ChatProvider extends ChangeNotifier {
   List<Message> messageList = [
     Message(text: 'texto mio', fromWho: FromWho.me),
     Message(text: 'texto mio 2', fromWho: FromWho.me),
+    Message(text: 'texto bot', fromWho: FromWho.bot),
   ];
 
   Future sendMessage(String text) async {}
