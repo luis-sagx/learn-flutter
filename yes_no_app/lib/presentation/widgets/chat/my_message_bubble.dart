@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'package:yes_no_app/domain/entities/message.dart';
-import '../../providers/chat_provider.dart';
 
 class MyMessageBubble extends StatelessWidget {
   const MyMessageBubble({super.key, required this.message});
