@@ -42,6 +42,4 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
-/assets/videos/
-# .gitignore
-assets/videos/*.mp4
+/assets/videos/*.mp4
